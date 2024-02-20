@@ -74,13 +74,13 @@
 
       // THÔNG TIN THIỆP CHÍNH
       var invitation = {
-        dia_diem: "LUXURY PALACE",
-        dia_chi: "Tổ 2, Phường Thống Nhất, TP Hòa Bình",
-        thu: "CHỦ NHẬT",
-        ngay: "17",
+        dia_diem: "HƯƠNG CAU PLACE RESTAURANT",
+        dia_chi: "N15-Lô 7, Khu trung cư Bắc Trần Hưng Đạo, Phường Quỳnh Lâm, TP Hòa Bình",
+        thu: "THỨ BẢY",
+        ngay: "16",
         thang: "03",
         nam: "2024",
-        gio: "10H30",
+        gio: "10H00",
         ngay_am: "Nhằm ngày .......",
       };
       // CÂU CHUYỆN TÌNH YÊU
@@ -129,16 +129,16 @@
       // DANH SÁCH THIỆP
       var invitationCard = [
         {
-          tieude: "Nhà Trai",
+          tieude: "Bản Đồ",
           link_anh_thiep:
-            "thiepcr.png",
-          link_ban_do: "https://maps.app.goo.gl/kCMbind9KXHow2vr5",
-          phone: "(+84)838360088",
+            "thiepnhagai1.jpg",
+          link_ban_do: "https://maps.app.goo.gl/d3zLJCa4Pspg9mqr5",
+          phone: "(+84)389315212",
         },
         {
-          tieude: "Nhà Gái",
+          tieude: "Bản Đồ",
           link_anh_thiep:
-            "thiepcd.png",
+            "thiepnhagai2.jpg",
           link_ban_do: "https://maps.app.goo.gl/d3zLJCa4Pspg9mqr5",
           phone: "(+84)389315212",
         },
@@ -161,7 +161,7 @@
       //]]>
 
       const openQr = (s) => {
-        $(".mono_bank").attr("src", s ? qr_momo_mai : qr_momo);
+        $(".mono_bank").attr("src", s ? qr_momo_mai : qr_momo_mai);
       };
     </script>
     <style id="template-skin-1" type="text/css">
@@ -1236,13 +1236,14 @@
             data-aos-duration="3000"
           ></h2>
         </div>
-        <div class="banner-date" >
-          <span>NHÀ TRAI: </span>
+        <div class="banner-date" >          
           <span class="invitation_time"></span>
           <span class="name_day"></span>
-          <span class="invitation_day"></span><span>/</span><span class="invitation_month"></span><span>/</span><span class="invitation_year"></span>
           <br>
-          <span>NHÀ GÁI: 10H00 THỨ BẢY 16/03/2024</span>
+          <span>NGÀY </span></span><span class="invitation_day"></span><span>
+          <span>THÁNG </span></span><span class="invitation_month"></span><span>
+          <span>NĂM </span></span><span class="invitation_year"></span>
+          <br>
         </div>
       </div>
     </section>
@@ -1523,7 +1524,7 @@
 
           listInvitation =
             `
-                <div class="invitation-card">
+                <div class="invitation-card" >
                     <div class="invitation-media">
                         <img src="` + invitationImg + `" alt="">
                     </div>
